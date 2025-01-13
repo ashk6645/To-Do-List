@@ -1,0 +1,192 @@
+/* General Styles for the Todo App */
+.todo {
+    width: 90%;
+    max-width: 600px;
+    min-height: 732px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #ffffff, #f0f4ff);
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.todo.dark-mode {
+    background: linear-gradient(to bottom, #1a1a1a, #2d2d2d);
+    color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.theme-toggle {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.theme-toggle-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+    transform: rotate(360deg);
+}
+
+.todo-header {
+    margin-top: 20px;
+    color: #002765;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dark-mode .todo-header {
+    color: #ffffff;
+}
+
+/* Input and Add Task Button */
+.todo-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.todo-input {
+    border-radius: 50px;
+    background: #edeef0;
+    border: none;
+    outline: none;
+    width: 100%;
+    max-width: 400px;
+    height: 60px;
+    padding-left: 20px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.dark-mode .todo-input {
+    background: #3a3a3a;
+    color: #ffffff;
+}
+
+.todo-input:focus {
+    background: #ffffff;
+    box-shadow: 0 0 0 2px rgba(0, 39, 101, 0.2);
+}
+
+.dark-mode .todo-input:focus {
+    background: #4a4a4a;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+.todo-add-btn {
+    border-radius: 50px;
+    background: #ff6739;
+    width: 120px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.todo-add-btn:hover {
+    background: #ff8159;
+    transform: translateY(-2px);
+}
+
+/* Controls Section */
+.todo-controls {
+    margin-top: 30px;
+}
+
+.todo-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background: #edeef0;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dark-mode .filter-btn {
+    background: #3a3a3a;
+    color: #ffffff;
+}
+
+.filter-btn.active {
+    background: #ff6739;
+    color: #ffffff;
+}
+
+.todo-clear {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.todo-clear-btn {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.todo-clear-btn:hover {
+    background-color: #ff6666;
+    transform: translateY(-2px);
+}
+
+.todo-clear-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.todo-count {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.dark-mode .todo-count {
+    color: #ffffff;
+}
+
+.empty-state {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.dark-mode .empty-state {
+    color: #999;
+}

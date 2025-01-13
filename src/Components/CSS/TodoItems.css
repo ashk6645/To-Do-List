@@ -1,0 +1,111 @@
+/* Todo Item Styles */
+.todoitems {
+    margin: 10px 0;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.todoitems-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.todoitems-container.dark {
+    background-color: #3a3a3a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.todoitems-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.todoitems-content {
+    flex-grow: 1;
+}
+
+.todoitems-text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.todoitems-container.dark .todoitems-text {
+    color: #ffffff;
+}
+
+.todoitems-date {
+    font-size: 14px;
+    color: #666;
+}
+
+.todoitems-container.dark .todoitems-date {
+    color: #aaa;
+}
+
+/* Buttons inside TodoItem */
+.todoitems-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.complete-btn, .delete-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.complete-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.complete-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #da190b;
+    transform: scale(1.1);
+}
+
+/* Line-through text decoration */
+.line-through .todoitems-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.todoitems-container.dark.line-through .todoitems-text {
+    color: #666;
+}
+
+
