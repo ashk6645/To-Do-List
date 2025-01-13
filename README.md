@@ -10,9 +10,4 @@ Currently, two official plugins are available:
 
 # Demo
 [Watch Demo Video](https://github.com/ashk6645/To-Do-List/blob/master/Demo.mp4)
-# Demo
 
-<video width="600" controls>
-  <source src="https://github.com/ashk6645/To-Do-List/blob/master/Demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
